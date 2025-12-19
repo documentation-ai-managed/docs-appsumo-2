@@ -1,0 +1,119 @@
+{
+  "name": "Appsumo",
+  "initialRoute": "introduction",
+  "colors": {
+    "light": {
+      "brand": "#0e2a2b"
+    },
+    "dark": {
+      "brand": "#4a5f60"
+    }
+  },
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "icon": "book",
+        "groups": [
+          {
+            "group": "Getting Started",
+            "icon": "rocket",
+            "pages": [
+              {
+                "title": "Introduction",
+                "path": "introduction",
+                "icon": "home"
+              },
+              {
+                "title": "Quickstart",
+                "path": "quickstart",
+                "icon": "zap"
+              }
+            ]
+          },
+          {
+            "group": "Core Concepts",
+            "icon": "layers",
+            "pages": [
+              {
+                "title": "Features",
+                "path": "features",
+                "icon": "star"
+              },
+              {
+                "title": "Selling on AppSumo",
+                "path": "selling-on-appsumo",
+                "icon": "target"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "icon": "code",
+        "groups": [
+          {
+            "group": "Endpoints",
+            "openapi": "openapi.yaml"
+          }
+        ]
+      },
+      {
+        "tab": "Help Center",
+        "icon": "help-circle",
+        "pages": [
+          {
+            "title": "Help Center",
+            "path": "help-center",
+            "icon": "home"
+          },
+          {
+            "group": "FAQs",
+            "icon": "help-circle",
+            "expandable": false,
+            "pages": [
+              {
+                "title": "How to Redeem a Deal",
+                "path": "help-center/faq/how-to-redeem-a-deal"
+              }
+            ]
+          },
+          {
+            "group": "Troubleshooting",
+            "icon": "alert-circle",
+            "expandable": false,
+            "pages": [
+              {
+                "title": "Deal Code Not Working",
+                "path": "help-center/troubleshooting/deal-code-not-working"
+              }
+            ]
+          },
+          {
+            "group": "Guides",
+            "icon": "book-open",
+            "expandable": false,
+            "pages": [
+              {
+                "title": "Post Your Product",
+                "path": "help-center/guides/post-your-product"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Changelog",
+        "icon": "clock",
+        "pages": [
+          {
+            "title": "Release History",
+            "path": "changelog",
+            "icon": "history"
+          }
+        ]
+      }
+    ]
+  }
+}

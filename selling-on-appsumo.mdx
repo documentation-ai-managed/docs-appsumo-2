@@ -1,0 +1,157 @@
+---
+title: Selling Products on AppSumo
+description: Learn how to become a seller and list your software on AppSumo's marketplace to reach over 1 million entrepreneurs.
+---
+
+## Overview
+
+AppSumo connects your software with over 1 million entrepreneurs seeking lifetime deals on productivity, marketing, and content tools. As a vendor, you list products without monthly fees, offering limited-time deals that drive massive exposure and sales. Follow these steps to apply, prepare listings, set pricing, and manage support.
+
+<Columns cols={2}>
+  <Card title="Reach 1M+ Buyers" icon="users" href="#applying-as-a-vendor">
+    Tap into AppSumo's audience of bootstrapped founders and solopreneurs.
+  </Card>
+  <Card title="Lifetime Deals" icon="gift" href="#setting-deal-terms">
+    Offer one-time payments for recurring value—no subscriptions required.
+  </Card>
+  <Card title="Proven Results" icon="trending-up" href="#preparing-product-listings">
+    Vendors report 10x growth from featured deals.
+  </Card>
+  <Card title="Full Support Tools" icon="headphones" href="#managing-customer-support">
+    Built-in systems handle updates and queries.
+  </Card>
+</Columns>
+
+## Applying as a Vendor
+
+Start by submitting your application through the vendor portal. AppSumo reviews products based on innovation, market fit, and deal potential.
+
+<Steps>
+  <Step title="Create Account" icon="user-plus">
+    Visit `https://appsumo.com/vendors` and sign up with your email.
+
+    ```
+
+    bash
+    # Example signup curl (for reference)
+    curl -X POST https://appsumo.com/api/vendors/signup \
+      -d 'email=your@email.com&password=securepass123'
+    ```
+  </Step>
+  <Step title="Submit Application" icon="file-text">
+    Fill out the form with product details: name, URL, target audience, and unique value proposition.
+  </Step>
+  <Step title="Product Demo" icon="play-circle">
+    Schedule a 30-minute call. Prepare a live demo showcasing core features.
+  </Step>
+  <Step title="Approval Wait" icon="clock">
+    Hear back in 3-7 days. Approved vendors get access to the dashboard.
+  </Step>
+</Steps>
+
+<Callout kind="tip">
+  Highlight what makes your tool stand out, like AI-powered automation or no-code integrations.
+</Callout>
+
+## Preparing Product Listings
+
+Craft compelling listings with screenshots, videos, and feature breakdowns. Use high-quality assets to convert browsers into buyers.
+
+<Tabs>
+  <Tab title="Essential Elements" icon="list">
+    Include a hero image, 5-7 feature bullets, and tiered pricing table.
+
+    | Element       | Description                  | Required |
+    |---------------|------------------------------|----------|
+    | Hero Video   | 60-second overview          | Yes     |
+    | Screenshots  | 5+ high-res images          | Yes     |
+    | Changelog    | Update history              | Yes     |
+    | Refund Policy| Clear terms                 | Yes     |
+  </Tab>
+  <Tab title="Sample Feature List" icon="code">
+    ```
+
+    json
+    {
+      "features": [
+        "Unlimited projects",
+        "Team collaboration",
+        "Custom workflows",
+        "API integrations",
+        "Priority support"
+      ],
+      "techStack": ["React", "Node.js", "PostgreSQL"]
+    }
+    ```
+  </Tab>
+</Tabs>
+
+## Setting Deal Terms and Pricing
+
+Define your deal structure: lifetime access tiers, discounts, and minimum sales goals. AppSumo takes 50-70% revenue share based on volume.
+
+<CodeGroup tabs="Basic,Advanced">
+  ```json
+  {
+    "dealName": "Lifetime Access - Basic",
+    "price": 49,
+    "features": ["Core tools", "1 user"],
+    "minSales": 500
+  }
+  ```
+  ```json
+  {
+    "dealName": "Lifetime Access - Pro",
+    "price": 99,
+    "features": ["All tools", "5 users", "Custom API"],
+    "minSales": 1000,
+    "upsellPath": "/dashboard/upgrade"
+  }
+  ```
+</CodeGroup>
+
+<Callout kind="alert">
+  Set realistic pricing: $39-$199 tiers perform best. Avoid >70% discounts to maintain perceived value.
+</Callout>
+
+## Managing Customer Support and Updates
+
+Use AppSumo's portal for ticket management and announcements. Respond within 24 hours and post monthly updates.
+
+<ExpandableGroup>
+  <Expandable title="Support Best Practices" default-open="true">
+    - Segment queries: bugs, features, billing.
+    - Use templates for common issues.
+    - Escalate to AppSumo for fraud.
+
+    ```
+
+    markdown
+    **Support Ticket Template**
+
+    Hi {customer_name},
+
+    Thanks for reaching out. We're investigating your {issue_type}.
+
+    Expected resolution: {timeline}
+
+    Best,
+    Your Team
+    ```
+  </Expandable>
+  <Expandable title="Update Cadence">
+    Announce via portal: quarterly major updates, monthly patches. Track via changelog.md.
+  </Expandable>
+</ExpandableGroup>
+
+<Columns cols={3}>
+  <Card title="Vendor Dashboard" icon="layout-dashboard" href="https://appsumo.com/vendors/dashboard" target="_blank">
+    Monitor sales and support.
+  </Card>
+  <Card title="Resources" icon="book-open" href="https://appsumo.com/vendors/resources">
+    Guides and templates.
+  </Card>
+  <Card title="Contact Support" icon="mail" href="mailto:vendors@appsumo.com">
+    Get help from the team.
+  </Card>
+</Columns>
